@@ -1,0 +1,1 @@
+SELECT COUNT(id) AS "Number of members", FLOOR(AVG(DATEDIFF(CURRENT_TIMESTAMP, birthdate)/365.25)) AS "Average age" FROM profiles;

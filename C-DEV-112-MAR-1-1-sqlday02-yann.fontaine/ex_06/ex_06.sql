@@ -1,0 +1,1 @@
+select title AS "Movie title", DATEDIFF(CURRENT_TIMESTAMP, release_date) AS "Number of days passed" FROM movies WHERE release_date IS NOT NULL;

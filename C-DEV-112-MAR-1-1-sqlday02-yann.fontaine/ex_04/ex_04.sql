@@ -1,0 +1,1 @@
+SELECT SUBSTR(summary, 1, 92) AS "Summaries" from movies WHERE id%2!=0 AND id BETWEEN 42 AND 85;

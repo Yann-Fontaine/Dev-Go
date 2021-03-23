@@ -1,0 +1,1 @@
+LOAD DATA LOCAL INFILE '/tmp/jobs.csv' INTO TABLE jobs;

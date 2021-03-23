@@ -1,0 +1,1 @@
+SELECT name from genres WHERE id NOT BETWEEN 6 AND 12;
