@@ -1,0 +1,11 @@
+PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_03/db_pdo.php:11
+Stack trace:
+#0 /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_03/db_pdo.php(11): PDO->__construct()
+#1 /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_03/index.php(3): connect_db()
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_03/db_pdo.php:11
+Stack trace:
+#0 /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_03/db_pdo.php(11): PDO->__construct()
+#1 /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_03/index.php(3): connect_db()
+#2 {main}

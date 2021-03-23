@@ -1,0 +1,1 @@
+SELECT*, DATE_FORMAT(Date, '%Y-%m-%d');

@@ -1,0 +1,5 @@
+PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: YES) in /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_04/connect_db.php:30
+Stack trace:
+#0 /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_04/connect_db.php(30): PDO->__construct()
+#1 /home/yann/Rendu/C-DEV-111-MAR-1-1-phpday08-yann.fontaine/ex_04/index.php(2): include_once('/home/yann/Rend...')
+#2 {main}
