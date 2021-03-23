@@ -1,0 +1,403 @@
+div {
+    color: black;
+    line-height: 25px;
+    font-family: Roboto, sans-serif;
+}
+
+
+/* SYSTEME D'ÉTOILE */
+
+.rating a {
+    float: left;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color .4s;
+}
+.rating a:hover {
+    text-decoration-color: black;
+}
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+    color: black;
+    cursor: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+/* FORMS STYLE*/
+
+input[type=text] {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    height:1.9em;
+    border-bottom: 2px solid black;
+    font-size : 1.5em;
+    background: no-repeat right url("Images/algolia.png");
+    background-size: 25%;
+}
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid #C0C0C0;
+}
+
+#teaselect {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    height:1.9em;
+    border-bottom: 2px solid #C0C0C0;
+    font-size : 1.5em;
+}
+#teaselect:focus {
+    outline: none;
+    border-bottom: 3px solid #C0C0C0;
+}
+select{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    height:2.8em;
+    border-bottom: 2px solid #C0C0C0;
+    font-size : 1.5em;
+}
+select:focus{
+    outline: none;
+    border-bottom: 3px solid #C0C0C0;
+}
+
+/* PRICE ORDER */
+#lower {
+    width: 100%;
+}
+
+/* PAGINATION */
+
+
+/*  RECHERCHE */
+
+
+
+/* RESPONSIVE ALL */
+
+@media screen and (min-width: 180rem) {
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem 20rem 20rem 20rem 20rem 20rem 20rem 20rem;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 180rem;
+    }
+}
+@media screen and (min-width: 160rem) and (max-width: 180rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem 20rem 20rem 20rem 20rem 20rem 20rem;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 160rem;
+    }
+
+}
+@media screen and (min-width: 140rem) and (max-width: 160rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem 20rem 20rem 20rem 20rem;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 140rem;
+    }
+
+}
+@media screen and (min-width: 120rem) and (max-width: 140rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem 20rem 20rem 20rem;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 120rem;
+    }
+
+}
+@media screen and (min-width: 100rem) and (max-width: 120rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem 20rem 20rem;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 100rem;
+    }
+}
+@media screen and (min-width: 80rem) and (max-width: 100rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem 20rem;
+    }
+    .recherche{
+        display: grid;
+        grid-template-columns: 5rem 55rem 20rem  ;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 80rem;
+    }
+}
+
+@media screen and (min-width: 60rem) and (max-width: 80rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem;
+    }
+    .recherche{
+        display: grid;
+        grid-template-columns: 5rem 35rem 20rem  ;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 60rem;
+    }
+}
+@media screen and (min-width: 40rem) and (max-width: 60rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem 20rem ;
+    }
+    .recherche{
+        display: grid;
+        grid-template-columns: 5rem 20rem 15rem  ;
+    }
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 40rem;
+    }
+
+}
+@media screen and (min-width: 40rem) {
+    #teaselect2, #selectFilter {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+@media screen and (max-width: 40rem){
+    .containerPerso{
+        display: grid;
+        grid-template-columns: 20rem;
+        width: 100%;
+    }
+    .recherche{
+        display: grid;
+        grid-template-columns: 3rem 17rem 23rem  ;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .control-responsive {
+        display: grid;
+        grid-template-columns: 20rem;
+        width: 100%;
+    }
+
+    #filterN{
+        visibility: hidden;
+        position: absolute;
+    }
+    #selectFilter{
+        visibility: visible;
+    }
+}
+
+[slider] {
+    position: relative;
+    height: 14px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 45px 0 10px 0;
+  }
+  
+  [slider] > div {
+    position: absolute;
+    left: 13px;
+    right: 15px;
+    height: 14px;
+  }
+  
+  [slider] > div > [inverse-left] {
+    position: absolute;
+    left: 0;
+    height: 14px;
+    border-radius: 10px;
+    background-color: #CCC;
+    margin: 0 7px;
+  }
+  
+  [slider] > div > [inverse-right] {
+    position: absolute;
+    right: 0;
+    height: 14px;
+    border-radius: 10px;
+    background-color: #CCC;
+    margin: 0 7px;
+  }
+  
+  [slider] > div > [range] {
+    position: absolute;
+    left: 0;
+    height: 14px;
+    border-radius: 14px;
+    background-color: #686969cc;
+  }
+  
+  [slider] > div > [thumb] {
+    position: absolute;
+    top: -7px;
+    z-index: 2;
+    height: 28px;
+    width: 28px;
+    text-align: left;
+    margin-left: -11px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    background-color: #FFF;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+  [slider] > input[type=range] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 3;
+    height: 14px;
+    top: -2px;
+    width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+  }
+  
+  div[slider] > input[type=range]::-ms-track {
+    -webkit-appearance: none;
+    background: transparent;
+    color: transparent;
+  }
+  
+  div[slider] > input[type=range]::-moz-range-track {
+    -moz-appearance: none;
+    background: transparent;
+    color: transparent;
+  }
+  
+  div[slider] > input[type=range]:focus::-webkit-slider-runnable-track {
+    background: transparent;
+    border: transparent;
+  }
+  
+  div[slider] > input[type=range]:focus {
+    outline: none;
+  }
+  
+  div[slider] > input[type=range]::-ms-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    background: #686969cc;
+  }
+  
+  div[slider] > input[type=range]::-moz-range-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    background: #686969cc;
+  }
+  
+  div[slider] > input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    background: #686969cc;
+    -webkit-appearance: none;
+  }
+  
+  div[slider] > input[type=range]::-ms-fill-lower {
+    background: transparent;
+    border: 0 none;
+  }
+  
+  div[slider] > input[type=range]::-ms-fill-upper {
+    background: transparent;
+    border: 0 none;
+  }
+  
+  div[slider] > input[type=range]::-ms-tooltip {
+    display: none;
+  }
+  
+  [slider] > div > [sign] {
+    opacity: 1;
+    position: absolute;
+    margin-left: -11px;
+    top: -39px;
+    z-index:3;
+    background-color: #686969cc;
+    color: rgb(255, 255, 255);
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  [slider] > div > [sign]:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    border-radius: 16px;
+    top: 19px;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top-width: 16px;
+    border-top-style: solid;
+    border-top-color: #686969cc;
+  }
+  
+  [slider] > div > [sign] > span {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  
+  [slider]:hover > div > [sign] {
+    opacity: 1;
+  }
+
+  .imgContainer {
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 320px;
+    max-height: 320px;}

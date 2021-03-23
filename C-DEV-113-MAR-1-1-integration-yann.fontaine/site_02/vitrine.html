@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bou-Tea-Que</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/home/yann/Rendu/C-DEV-113-MAR-1-1-integration-yann.fontaine/site_02/style.css">
+</head>
+<header>
+
+  <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="/home/yann/Rendu/C-DEV-113-MAR-1-1-integration-yann.fontaine/site_02/images/Logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-item active text-right">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+            <a class="nav-link" href="#"><img src="/home/yann/Rendu/C-DEV-113-MAR-1-1-integration-yann.fontaine/site_02/images/Cart Button.png"/> <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+            <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+        </li>
+            </ul>
+        </div>
+
+  <!--SEARCHBAR-->
+
+      </nav>
+      <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+          <button class="img-fluid align-self-center mr-3 btn btn-outline-success my-2 my-sm-0" type="submit"><img src="/home/yann/Rendu/C-DEV-113-MAR-1-1-integration-yann.fontaine/site_02/images/Search.png"/></button>
+          <input class="form-control col-md-10 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+          <select class="nav-link dropdown-toggle text-right" id="navbarDropdownMenuLink" name="sort" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <option class="dropdown-item" href="#" value="price">Price</option>
+              <option class="dropdown-item" href="#" value="color">Color</option>
+              <option class="dropdown-item" href="#" value="collection">Collection</option>
+              <option class="dropdown-item" href="#" value="bestmatch">Best Match</option>
+            </div>
+          </select>
+
+      </nav>
+</header>
+<body>
+
+    <!--CARDS-->
+    <nav class="card-group">
+      <div class="card-deck">
+    <div class="card">
+        <div class="card-header">
+          FILTER BY 
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <select class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" name="collection" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <option value="" style="color:#686969cc">Collection<br/></option>
+                  <option class="dropdown-item" href="#" value="japan">- Japanese Garden</option>
+                  <option class="dropdown-item" href="#" value="price">- Chinese Temple</option>
+                  <option class="dropdown-item" href="#" value="color">- Indian Shrine</option>
+                  <option class="dropdown-item" href="#" value="collection">- English Breakfast</option>
+                </div>
+              </select>
+          </li>
+          <li class="list-group-item">
+            <select class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" name="collection" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <option value="" style="color:#686969cc">Usage<br/></option>
+                <option class="dropdown-item" href="#" value="break">- Breakfast</option>
+                <option class="dropdown-item" href="#" value="aftertea">- Afternoon Tea</option>
+                <option class="dropdown-item" href="#" value="hightea">- High Tea</option>
+                <option class="dropdown-item" href="#" value="herbal">- Herbal Tea</option>
+              </div>
+            </select>
+          </li>
+          <li class="list-group-item">
+            <select class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" name="collection" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <option value="" style="color:#686969cc">Category<br/></option>
+                <option class="dropdown-item" href="#" value="tea">- Tea</option>
+                <option class="dropdown-item" href="#" value="kettle">- Kettles</option>
+                <option class="dropdown-item" href="#" value="access">- Accessories</option>
+                <option class="dropdown-item" href="#" value="misc">- Miscellaneous</option>
+              </div>
+            </select>
+          </li>
+          <li class="list-group-item">
+            <div slider id="slider-distance">
+                <div>
+                  <div inverse-left style="width:70%;"></div>
+                  <div inverse-right style="width:70%;"></div>
+                  <div range style="left:30%;right:40%;"></div>
+                  <span thumb style="left:30%;"></span>
+                  <span thumb style="left:60%;"></span>
+                  <div sign style="left:30%;">
+                    <span id="value">300</span>
+                  </div>
+                  <div sign style="left:60%;">
+                    <span id="value">600</span>
+                  </div>
+                </div>
+                <input type="range" tabindex="0" value="300" max="1000" min="0" step="10" oninput="
+                this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                var children = this.parentNode.childNodes[1].childNodes;
+                children[1].style.width=value+'%';
+                children[5].style.left=value+'%';
+                children[7].style.left=value+'%';children[11].style.left=value+'%';
+                children[11].childNodes[1].innerHTML=this.value;" />
+              
+                <input type="range" tabindex="0" value="600" max="1000" min="0" step="10" oninput="
+                this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                var children = this.parentNode.childNodes[1].childNodes;
+                children[3].style.width=(100-value)+'%';
+                children[5].style.right=(100-value)+'%';
+                children[9].style.left=value+'%';children[13].style.left=value+'%';
+                children[13].childNodes[1].innerHTML=this.value;" />
+              </div>
+          </li>
+        </ul>
+    </div>
+
+
+    <!--MORE CARDS-->
+
+ 
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      </div>
+</nav>
+
+
+ <!--PAGES-->
+
+    <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item active">
+            <span class="page-link">
+              1
+              <span class="sr-only">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" href="#">9</a></li>
+          <li class="page-item"><a class="page-link" href="#">></a>
+          </li>
+        </ul>
+      </nav>
+</body>
