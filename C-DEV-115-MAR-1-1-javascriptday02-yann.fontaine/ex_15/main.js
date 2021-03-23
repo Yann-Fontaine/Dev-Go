@@ -1,0 +1,1 @@
+blue = () => document.getElementsByClassName("platypus")[0].style.backgroundColor = "blue";

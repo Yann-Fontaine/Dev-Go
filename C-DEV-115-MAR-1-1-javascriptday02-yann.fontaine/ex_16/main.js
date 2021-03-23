@@ -1,0 +1,1 @@
+color = (hexa='#ffc0cb') => document.getElementsByClassName("platypus")[0].style.backgroundColor = hexa;
